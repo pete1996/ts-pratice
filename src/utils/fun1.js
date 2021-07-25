@@ -7,6 +7,7 @@ function enumize() {
     args.forEach(function (k) {
         ret[k] = k;
     });
+    console.log(7)
     return ret;
 }
 var p = enumize("zhangsan", "lisi", "wangwu");
