@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   // 入口起点
   entry: {
-    app: './src/index.js',
+    app: './src/index.jsx',
   },
   // 输出
   output: {

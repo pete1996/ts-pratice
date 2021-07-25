@@ -2,7 +2,7 @@
   "name": "basic-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --progress --colors --config config/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -30,6 +30,8 @@
     "@babel/polyfill": "^7.4.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.1.2",
+    "antd": "^4.3.1",
+    "axios": "^0.19.1"
   }
 }
