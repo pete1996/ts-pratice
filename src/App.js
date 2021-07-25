@@ -23,6 +23,7 @@ export default class App extends React.Component{
         })
     }
     componentWillUnmount(){
+        console.log('1');
         clearInterval(this.timer)
     }
     render(){
