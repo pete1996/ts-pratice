@@ -1150,6 +1150,13 @@
     "inherits" "^2.0.1"
     "minimalistic-assert" "^1.0.0"
 
+"asn1@^0.2.4":
+  "integrity" "sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ=="
+  "resolved" "https://npm.corp.kuaishou.com/asn1/-/asn1-0.2.6.tgz"
+  "version" "0.2.6"
+  dependencies:
+    "safer-buffer" "~2.1.0"
+
 "assert@^1.1.1":
   "integrity" "sha512-EDsgawzwoun2CZkCgtxJbv392v4nbk9XDD06zI+kQYoBM/3RBWLlEyJARDOmhAAosBjWACEkKL6S+lIZtcAubA=="
   "resolved" "https://registry.npmjs.org/assert/-/assert-1.5.0.tgz"
@@ -1227,6 +1234,13 @@
   "integrity" "sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY="
   "resolved" "https://registry.npmjs.org/batch/-/batch-0.6.1.tgz"
   "version" "0.6.1"
+
+"bcrypt-pbkdf@^1.0.2":
+  "integrity" "sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w=="
+  "resolved" "https://npm.corp.kuaishou.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "tweetnacl" "^0.14.3"
 
 "big.js@^3.1.3":
   "integrity" "sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q=="
@@ -1406,6 +1420,11 @@
     "base64-js" "^1.0.2"
     "ieee754" "^1.1.4"
     "isarray" "^1.0.0"
+
+"buildcheck@0.0.3":
+  "integrity" "sha512-pziaA+p/wdVImfcbsZLNF32EiWyujlQLwolMqUQE8xpKNOH7KmZQaY8sXN7DGOEzPAElo9QTaeNRfGnf3iOJbA=="
+  "resolved" "https://npm.corp.kuaishou.com/buildcheck/-/buildcheck-0.0.3.tgz"
+  "version" "0.0.3"
 
 "builtin-status-codes@^3.0.0":
   "integrity" "sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug="
@@ -1748,6 +1767,14 @@
   "integrity" "sha1-tf1UIgqivFq1eqtxQMlAdUUDwac="
   "resolved" "https://npm.corp.kuaishou.com/core-util-is/-/core-util-is-1.0.2.tgz"
   "version" "1.0.2"
+
+"cpu-features@~0.0.4":
+  "integrity" "sha512-fKiZ/zp1mUwQbnzb9IghXtHtDoTMtNeb8oYGx6kX2SYfhnG0HNdBEBIzB9b5KlXu5DQPhfy3mInbBxFcgwAr3A=="
+  "resolved" "https://npm.corp.kuaishou.com/cpu-features/-/cpu-features-0.0.4.tgz"
+  "version" "0.0.4"
+  dependencies:
+    "buildcheck" "0.0.3"
+    "nan" "^2.15.0"
 
 "create-ecdh@^4.0.0":
   "integrity" "sha512-GbEHQPMOswGpKXM9kCWVrremUcBmjteUaQ01T9rkKCPDXfUHX0IoP9LpHYo2NPFampa4e+/pFDc3jQdxrxQLaw=="
@@ -3119,6 +3146,11 @@
   "resolved" "https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz"
   "version" "1.1.0"
 
+"is-stream@^2.0.0":
+  "integrity" "sha1-+sHj1TuXrVqdCunO8jifWBClwHc="
+  "resolved" "https://npm.corp.kuaishou.com/is-stream/-/is-stream-2.0.1.tgz"
+  "version" "2.0.1"
+
 "is-symbol@^1.0.2":
   "integrity" "sha512-HS8bZ9ox60yCJLH9snBpIwv9pYUAkcuLhSA1oero1UB5y9aiQpRA8y2ex945AOtCZL1lJDeIk3G5LthswI46Lw=="
   "resolved" "https://registry.npmjs.org/is-symbol/-/is-symbol-1.0.2.tgz"
@@ -3352,6 +3384,13 @@
   dependencies:
     "pify" "^4.0.1"
     "semver" "^5.6.0"
+
+"make-dir@^3.1.0":
+  "integrity" "sha1-QV6WcEazp/HRhSd9hKpYIDcmoT8="
+  "resolved" "https://npm.corp.kuaishou.com/make-dir/-/make-dir-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "semver" "^6.0.0"
 
 "mamacro@^0.0.3":
   "integrity" "sha512-qMEwh+UujcQ+kbz3T6V+wAmO2U8veoq2w+3wY8MquqwVA3jChfwY+Tk52GZKDfACEPjuZ7r2oJLejwpt8jtwTA=="
@@ -3594,10 +3633,10 @@
     "dns-packet" "^1.3.1"
     "thunky" "^1.0.2"
 
-"nan@^2.12.1":
-  "integrity" "sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg=="
-  "resolved" "https://registry.npmjs.org/nan/-/nan-2.14.0.tgz"
-  "version" "2.14.0"
+"nan@^2.12.1", "nan@^2.15.0", "nan@^2.16.0":
+  "integrity" "sha512-UdAqHyFngu7TfQKsCBgAA6pWDkT8MAO7d0jyOecVhN5354xbLqdn8mV9Tat9gepAupm0bt2DbeaSC8vS52MuFA=="
+  "resolved" "https://npm.corp.kuaishou.com/nan/-/nan-2.16.0.tgz"
+  "version" "2.16.0"
 
 "nanomatch@^1.2.9":
   "integrity" "sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA=="
@@ -3699,6 +3738,18 @@
   "version" "1.1.21"
   dependencies:
     "semver" "^5.3.0"
+
+"node-ssh@^13.0.0":
+  "integrity" "sha512-8yfPvuB8z1M5rXFR8Z1Tl0a0M43N64VjZfjXRwOGCcImFphuXhMPniPksf1FkVj9djKbpHvLUMIVS399H9yCSQ=="
+  "resolved" "https://npm.corp.kuaishou.com/node-ssh/-/node-ssh-13.0.0.tgz"
+  "version" "13.0.0"
+  dependencies:
+    "is-stream" "^2.0.0"
+    "make-dir" "^3.1.0"
+    "sb-promise-queue" "^2.1.0"
+    "sb-scandir" "^3.1.0"
+    "shell-escape" "^0.2.0"
+    "ssh2" "^1.5.0"
 
 "nopt@^4.0.1":
   "version" "4.0.1"
@@ -5028,13 +5079,25 @@
   dependencies:
     "ret" "~0.1.10"
 
-"safer-buffer@>= 2.1.2 < 3":
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@~2.1.0":
   "integrity" "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
   "resolved" "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   "version" "2.1.2"
 
 "sax@^1.2.4":
   "version" "1.2.4"
+
+"sb-promise-queue@^2.1.0":
+  "integrity" "sha1-fkS+vvZD912Amj239gW4Fdh3oE0="
+  "resolved" "https://npm.corp.kuaishou.com/sb-promise-queue/-/sb-promise-queue-2.1.0.tgz"
+  "version" "2.1.0"
+
+"sb-scandir@^3.1.0":
+  "integrity" "sha1-McNGq7UYS3PFolsoaFj0KZqodWw="
+  "resolved" "https://npm.corp.kuaishou.com/sb-scandir/-/sb-scandir-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "sb-promise-queue" "^2.1.0"
 
 "scheduler@^0.19.1":
   "integrity" "sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA=="
@@ -5197,6 +5260,11 @@
   "resolved" "https://registry.npmjs.org/shebang-regex/-/shebang-regex-1.0.0.tgz"
   "version" "1.0.0"
 
+"shell-escape@^0.2.0":
+  "integrity" "sha1-aP0CXrBJC09WegJ/C/IkgLX4QTM="
+  "resolved" "https://npm.corp.kuaishou.com/shell-escape/-/shell-escape-0.2.0.tgz"
+  "version" "0.2.0"
+
 "signal-exit@^3.0.0":
   "integrity" "sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0="
   "resolved" "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.2.tgz"
@@ -5340,6 +5408,17 @@
   "version" "3.1.0"
   dependencies:
     "extend-shallow" "^3.0.0"
+
+"ssh2@^1.5.0":
+  "integrity" "sha512-nfg0wZWGSsfUe/IBJkXVll3PEZ//YH2guww+mP88gTpuSU4FtZN7zu9JoeTGOyCNx2dTDtT9fOpWwlzyj4uOOw=="
+  "resolved" "https://npm.corp.kuaishou.com/ssh2/-/ssh2-1.11.0.tgz"
+  "version" "1.11.0"
+  dependencies:
+    "asn1" "^0.2.4"
+    "bcrypt-pbkdf" "^1.0.2"
+  optionalDependencies:
+    "cpu-features" "~0.0.4"
+    "nan" "^2.16.0"
 
 "ssri@^6.0.1":
   "integrity" "sha512-3Wge10hNcT1Kur4PDFwEieXSCMCJs/7WvSACcrMYrNp+b8kDL1/0wJch5Ni2WrtwEa2IO8OsVfeKIciKCDx/QA=="
@@ -5607,6 +5686,11 @@
   "integrity" "sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY="
   "resolved" "https://registry.npmjs.org/tty-browserify/-/tty-browserify-0.0.0.tgz"
   "version" "0.0.0"
+
+"tweetnacl@^0.14.3":
+  "integrity" "sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA=="
+  "resolved" "https://npm.corp.kuaishou.com/tweetnacl/-/tweetnacl-0.14.5.tgz"
+  "version" "0.14.5"
 
 "type-is@~1.6.17", "type-is@~1.6.18":
   "integrity" "sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g=="
