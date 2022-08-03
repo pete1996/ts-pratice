@@ -14,7 +14,7 @@ module.exports = {
   },
   // 解析
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".json", ".jsx"],
+    extensions: [".ts", ".tsx", ".js", ".less", ".json", ".jsx"],
   },
   // loader
   module: {
@@ -27,6 +27,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        use: ["style-loader", "css-loader", "less-loader"],
       },
     ],
   },

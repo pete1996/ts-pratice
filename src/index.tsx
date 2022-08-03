@@ -8,6 +8,8 @@ import Zeus from "./zeus";
 import store from "./store";
 import ReactDOM from "react-dom";
 
+import "./style/global.less";
+
 function Bootstap() {
   return (
     <ConfigProvider locale={zhCN}>
@@ -19,10 +21,5 @@ function Bootstap() {
     </ConfigProvider>
   );
 }
-
-// function bootstap() {
-//   const root = createRoot(document.getElementById("root") || document.body);
-//   root.render(<Bootstap />);
-// }
 
 ReactDOM.render(<Bootstap />, document.getElementById("root"));
