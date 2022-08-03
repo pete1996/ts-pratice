@@ -12,7 +12,19 @@
               },
             },
           ],
-          "@babel/preset-react"
+          "@babel/preset-react",
+          "@babel/preset-typescript",
     ],
-    "plugins": []
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ],
+     //  "@babel/plugin-proposal-optional-chaining",
+    //   "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
 }

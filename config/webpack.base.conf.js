@@ -1,41 +1,41 @@
-'use strict'
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+"use strict";
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // 入口起点
   entry: {
-    app: './src/index.jsx',
+    app: "./src/index.tsx",
   },
   // 输出
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, "../dist"),
     filename: "[name].js",
   },
   // 解析
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json', '.jsx']
+    extensions: [".ts", ".tsx", ".js", ".json", ".jsx"],
   },
   // loader
   module: {
     rules: [
       {
-        test: /\.js|jsx$/,
-        exclude: /node_modules/,// 屏蔽不需要处理的文件（文件夹）（可选）
-        loader: 'babel-loader'
+        test: /\.ts|tsx$/,
+        exclude: /node_modules/,
+        loader: "babel-loader?cacheDirectory=true",
       },
       {
         test: /\.css$/,
-        use: ['style-loader','css-loader']
-      }
-    ]
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
   // 插件
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-      inject: 'body'
-    })
-  ]
-}
+      filename: "index.html",
+      template: "index.html",
+      inject: "body",
+    }),
+  ],
+};
