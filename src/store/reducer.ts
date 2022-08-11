@@ -14,7 +14,7 @@ const initialState = {
   },
 };
 
-export function commonReducer(state: ICommonState, action: IAction): any {
+export function commonReducer(state: any, action: IAction): any {
   if (!state) {
     return initialState;
   }

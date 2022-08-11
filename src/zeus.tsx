@@ -1,5 +1,6 @@
 import React from "react";
+import Layout from "./module/layout/index";
 
 export default function Zeus() {
-  return <p>ssssss中文</p>;
+  return <Layout />;
 }
